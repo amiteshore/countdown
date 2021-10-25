@@ -1,2 +1,52 @@
+* {
+  box-sizing: border-box;
+}
 
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  color: #ededed;
+}
 
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: dodgerblue;
+  background: linear-gradient(60deg, #000541, #3f0505);
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.5em;
+  text-shadow: 2px 1px #7d7d7d;
+}
+
+span {
+  display: inline-block;
+  font-family: "Fira Code", monospace;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+@media (min-width: 640px) {
+  .container {
+    width: 600px;
+  }
+
+  h1 {
+    font-size: 4em;
+  }
+
+  span {
+    font-size: 16px;
+  }
+}
